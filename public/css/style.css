@@ -1,0 +1,174 @@
+#exo1 {
+    position: relative;  
+  } 
+  #exo1::before {
+    content:'';
+    position: absolute;
+    width: 4%;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  #exo1:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  #exo2 {
+    position: relative;
+  }
+  
+  #exo2::before {
+    content: '';
+    position: absolute;
+    width: 4%;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  #exo2:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+
+
+
+#exo3 {
+    background:linear-gradient(to bottom,red 0%,red 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    text-decoration: none;
+    transition: background-size .2s;
+    width: 4%;
+  }
+  
+#exo3:hover {
+    background-size: 4px 50px;
+  }
+
+
+  #exo4 {
+    position: relative;
+    width: max-content;
+  }
+  
+  #exo4::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+  }
+  
+  #exo4:hover::before {
+    visibility: hidden;
+    transition: width 1s, height 1s 1s, visibility 5s 2s;
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    width: 100%;
+    height: calc(100% - 2px);
+  }
+  
+  #exo4::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0%;
+    right: 0%;
+    visibility: hidden;
+  
+  }
+  
+  #exo4:hover::after {
+    visibility: visible;
+    transition: width 1s 1s, height 1s 2s, visibility 1s 1s;
+    width: 100%;
+    height: calc(100% - 2px);
+    border-bottom: 3px solid red;
+    border-left: 3px solid red
+  
+  
+  
+  } 
+
+ /*
+ 
+section:nth-of-type(4) h1 span {
+  display: block;
+  background: red;
+  transition: all 0.2s;
+}
+
+#exo4 h1 span:nth-child(1),
+#exo4 h1 span:nth-child(3) {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+}
+#exo4 h1 span:nth-child(2),
+#exo4 h1 span:nth-child(4) {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+}
+
+
+
+
+#exo4 h1 span:nth-child(1) {
+  top: 0;
+  left: -100%;
+}
+#exo4 h1 span:nth-child(2) {
+  top: -100%;
+  right: 0;
+}
+#exo4 h1 span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+}
+#exo4 h1 span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+}
+
+
+
+#exo4:hover h1 span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+#exo4:hover h1 span:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+#exo4:hover h1 span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+#exo4:hover h1 span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+*/
+
+
+
+  
+ 
+  
+  
+
+
+
+
